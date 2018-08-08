@@ -16,6 +16,13 @@ body{
     font-family: 'Noto Sans TC', sans-serif;
     src: url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
 }
+.master{
+        display:flex;
+    flex-direction:column;
+    flex: 1;
+    margin: auto;
+    padding: 0px 10px;
+}
 .demoALL{
     
     display:flex;
@@ -24,22 +31,30 @@ body{
      margin: 0;
     padding: 0; 
     
-  background-color:#0C4842;
+  background-color:#2E5C6E;
   //opacity: 0.2;
     width=100%
 }
 .Container{
     display:flex;
     flex-direction:column;
-    flex: 1;
       background-color:#0C4842;
+
+          flex: initial;
+  max-width: 860px;
+        margin-top:-4px;
 
 }
 .ContainerB{
-    display:flex;
+    
     flex-direction:column;
     flex: 1;
       background-color:#FBE251;
+             flex: initial;
+  max-width: 860px;
+      
+      
+
 
 }
 .Title{
@@ -52,6 +67,7 @@ body{
     margin-left:auto;
     color: #FBE251;
     text-align:center;
+    
 }
 .TitleB{
     border:1.5px #0C4842 solid;
@@ -59,7 +75,7 @@ body{
     padding:2px 25px;
     margin-top:10px;
     margin-bottom:10px;
-    margin-right:auto;
+    margin-right:%;
     margin-left:auto;
     color: #0C4842;
     text-align:center;
@@ -221,13 +237,16 @@ height: 30vh;
 
 
 <div class="demoALL">
+    <div class="Top">
         <p class="Title">TOP不二講堂</p>
     
-
+    </div>
     <div class="Topimg">
         <img src="./img/topimg.png" alt="Stickman" width=100%>
 
     </div>
+    <div class="master">
+    
     <div class="Container">
         <p class="Title">講座內容</p>
     <div class="demoRL">
@@ -285,7 +304,7 @@ height: 30vh;
         <p class="demotext">背景透明DOWN文字也透明</p>
     </div>
 
- 
+    </div>
 </div>
 </body> 
 </html>
