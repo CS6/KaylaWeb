@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>opacity</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            background: url(img/bg.png) 0 0 repeat;
+        }
+        
+        @font-face {
+            font-family: 'Noto Sans TC', sans-serif;
+            src: url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+        }
+        
+        .master {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: auto;
+        }
+
+        
+        .demoALL {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            background-color: #2E5C6E;
+            /* opacity: 0.2; */
+            width: 100%;
+        }
+        
+        .Container {
+            display: flex;
+            flex-direction: column;
+            background-color: #0C4842;
+            flex: initial;
+            max-width: 860px;
+            margin-top: -4px;
+        }
+        
+        .ContainerB {
+            display: flex;
+            flex-direction: column;
+            background-color: #C1BD8E;
+            flex: initial;
+            max-width: 860px;
+        }
+        
+        .Title {
+            border: 1.5px #C1BD8E solid;
+            border-radius: 50px;
+            padding: 2px 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: auto;
+            margin-left: auto;
+            color: #C1BD8E;
+            text-align: center;
+        }
+        
+        .TitleB {
+            border: 1.5px #0C4842 solid;
+            border-radius: 50px;
+            padding: 2px 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: auto;
+            margin-left: auto;
+            color: #0C4842;
+            text-align: center;
+        }
+        
+        .demotitle {
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+        
+        .demotext {
+            font-family: 'Noto Sans TC, sans-serif';
+            font-weight: 100;
+            padding: 2px 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: auto;
+            margin-left: auto;
+            color: azure;
+            text-align: center;
+        }
+        
+        .Gtext {
+            font-family: 'Noto Sans TC, sans-serif';
+            font-weight: 300;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-right: auto;
+            margin-left: auto;
+            color: #0C4842;
+        }
+        
+        .Top {
+            display: flex;
+            flex: 1;
+            background-color: #0C4842;
+        }
+        
+        .TopImg {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            background-color: #0C4842;
+        }
+        
+        .demoRL {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex: 2;
+            padding: 0 25px;
+            background-color: #0C4842;
+        }
+        
+        .demoR {
+            /* display: flex; */
+            flex: 1 1 300px;
+            margin: 10px;
+            /*    flex-direction:column ;*/
+            border: 1.5px #C1BD8E solid;
+            /* display: inline-block; */
+            /* min-width: 300px; */
+            background-color: #345f30;
+        }
+        
+        .demoL {
+            /* display: flex; */
+            flex: 1 1 300px;
+            margin: 10px;
+            /*    flex-direction:column ;*/
+            border: 1.5px #C1BD8E solid;
+            /* min-width: 300px;
+            display: inline-block; */
+            background-color: #345f30;
+        }
+        
+        .demoA {
+            background-color: #C1BD8E;
+        }
+        
+        .demoB {
+            background-color: #0C4842;
+        }
+        
+        .demoMap {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex: 2;
+            margin-bottom: 20px;
+            height: 30vh;
+            background-color: #C1BD8E;
+        }
+        
+        .Map {
+            display: flex;
+            flex: 2 1 300px;
+            padding: 0 25px;
+            background-color: #C1BD8E;
+        }
+        
+        .MapDoc {
+            display: flex;
+            flex: 1 1 300px;
+            padding: 25px;
+            background-color: #C1BD8E;
+        }
+        
+        .About {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            background-color: #0C4842;
+            padding: 0 25px;
+            flex-wrap: wrap;
+        }
+        
+        .AboutImg {
+            display: flex;
+            flex: 1;
+            margin-bottom: 30px;
+            margin-left: 50px;
+            margin-right: auto;
+            background-color: #0C4842;
+        }
+        
+        .AboutDoc {
+            display: flex;
+            flex: 9;
+            padding: 25px;
+            flex-direction: column;
+            text-align-last: left;
+            background-color: #0C4842;
+        }
+        
+        .next {
+            display: flex;
+            flex: 1;
+            padding: 0 25px;
+            background-color: #0C4842;
+        }
+        
+        .down {
+            display: flex;
+            flex: 1;
+            background-color: #0C4842;
+        }
+        
+        .next {
+            display: flex;
+            flex: 1;
+            background-color: #C1BD8E;
+        }
+        
+        .demo p {
+            color: #FFFFFF;
+        }
+        
+        .bgimg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+            vertical-align: middle;
+        }
+        
+        .abouttext {
+            color: #C1BD8E;
+            line-height: 1.5;
+            text-align-last: left;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+
+    <div class="demoALL">
+        <div class="Top">
+            <p class="Title">TOP不二講堂</p>
+
+        </div>
+        <div class="Topimg">
+            <img src="./img/topimg.png" alt="Stickman" width=100%>
+
+        </div>
+        <div class="master">
+
+            <div class="Container">
+                <p class="Title">講座內容</p>
+                <div class="demoRL">
+                    <div class="demoR">
+                        <div class="demoA">
+
+                            <p class="demotitle">背景透明A文字也透明</p>
+                        </div>
+                        <div class="demoB">
+                            <h1 class="demotext">背景透明</h1>
+                            <p class="demotext">背景透明B文字也透明背景透明B文字也透明背景透明B文字也透明背景透明B文字也透明背景透明B文字也透明背景透明B文字也透明背景透明B文字也透明背景透明B文字也透明</p>
+                        </div>
+                    </div>
+                    <div class="demoL">
+                        <div class="demoA">
+
+                            <p class="demotitle">背景透明A文字也透明</p>
+                        </div>
+                        <div class="demoB">
+                            <h1 class="demotext">背景透明</h1>
+                            <p class="demotext">背景透明B文字也透明背景透明B文字也透明背景透明B文字也透明背景透明B文字也透明背景透明B文字也透明背景透明B文字也透明背景透明B文字也透明背景透明B文字也透明</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ContainerB">
+
+                <p class="TitleB">標題</p>
+                <div class="demoMap">
+                    <div class="Map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.1332614972625!2d120.6542697490482!3d24.131957753699634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dae6fbba96f%3A0xaa259640c9e85755!2zNDAy5Y-w5Lit5biC5Y2X5Y2A5bSH5YCr5YyX6KGXNzPlt7cxMeiZnw!5e0!3m2!1szh-TW!2stw!4v1533736521984"
+                            frameborder="0" style="border:0" allowfullscreen width=100%></iframe>
+                    </div>
+                    <div class="MapDoc">
+                        <div style="flex-direction: column">
+                            <p class="Gtext">台中市南區崇倫北街73巷11號</p>
+                            <p class="Gtext">幔尼設計事務所</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="Container">
+                <p class="Title">標題</p>
+                <div class="About">
+                    <div class="AboutImg">
+                        <img src="./img/man_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.png" alt="Stickman" width="200" height="200">
+                    </div>
+                    <div class="AboutDoc">
+                        <div style="display: flex; flex-direction:row;margin: 0 20px">
+                            <h2 style="color: aliceblue; margin: 0 10px">蘇聲培</h2>
+                            <h6 class="abouttext" style="align-self: flex-end;line-height: 1.8123">老師</h6>
+                        </div>
+                        <div style="padding: 30px ">
+                            <h6 class="abouttext">不二講堂/覺知途徑課程 創辦人。</h6>
+                            <h6 class="abouttext">超過20年的探索歷程，看見了悟內在心靈的【覺知途徑】。</h6>
+                            <h6 class="abouttext">熱情的透過不同方式，分享他的經驗。</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ContainerB">
+                <p class="TitleB">標題</p>
+                <div class="next">
+                    <h1 class="Gtext">背景透明NEXT文字也透明</h1>
+                </div>
+            </div>
+
+        </div>
+        <div class="down">
+            <p class="demotext">背景透明DOWN文字也透明</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
